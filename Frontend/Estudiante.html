@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Estudiantes</title>
+  <link rel="stylesheet" href="../Styles/Students.css">
+</head>
+<body>
+  <a href="../index.html">← Volver</a>
+  <h1>Gestión de Estudiantes</h1>
+
+  <div class="actions">
+    <button onclick="mostrarFormulario()">Agregar Estudiante</button>
+  </div>
+
+  <div class="search">
+    <input type="text" id="busqueda" placeholder="Buscar por nombre" oninput="filtrarTabla()">
+  </div>
+
+  <form id="form-estudiante">
+    <h2>Agregar/Editar Estudiante</h2>
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <select id="tipoDoc">
+      <option value="C.C">C.C</option>
+      <option value="T.I">T.I</option>
+    </select>
+    <input type="text" id="documento" placeholder="Número de documento" required>
+    <input type="text" id="departamento" placeholder="Departamento" required>
+    <input type="text" id="codigo" placeholder="Código de estudiante" required>
+    <input type="text" id="grupo" placeholder="Grupo" required>
+    <input type="text" id="semestre" placeholder="Semestre" required>
+    <input type="text" id="asignatura" placeholder="Asignatura" required>
+    <input type="date" id="fecha" required>
+    <select id="asistencia">
+      <option value="0">No asistió</option>
+      <option value="1">Asistió</option>
+      <option value="r">Retardo</option>
+    </select>
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Listado de Estudiantes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Tipo Doc</th>
+        <th>Documento</th>
+        <th>Departamento</th>
+        <th>Código</th>
+        <th>Grupo</th>
+        <th>Semestre</th>
+        <th>Asignatura</th>
+        <th>Fecha</th>
+        <th>Asistencia</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-estudiantes"></tbody>
+  </table>
+
+  <script src="../Scripts/Students.js"></script>
+</body>
+</html>

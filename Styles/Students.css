@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background-color: #f8f9fa; /* Gris claro suave, similar al fondo */
+    padding: 30px; /* Mayor espacio alrededor del contenido */
+    color: #495057; /* Color de texto agradable y legible */
+}
+
+h1,
+h2 {
+    color: #3f51b5; /* Azul principal para los títulos */
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #3f51b5; /* Línea inferior azul más destacada */
+    padding-bottom: 0.5rem;
+}
+
+form {
+    display: none; /* Mantiene la propiedad 'display: none' */
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05); /* Sombra suave y sutil */
+    border: 1px solid #e0e0e0; /* Borde gris claro y suave */
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #343a40; /* Gris oscuro para las etiquetas */
+}
+
+form input,
+form select {
+    display: block;
+    width: calc(100% - 1rem); /* Ocupar casi todo el ancho */
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ced4da; /* Borde gris estándar para los inputs */
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1976d2; /* Azul similar al botón "Editar" */
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.15s ease-in-out; /* Transición suave */
+}
+
+form button:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el ratón */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05); /* Sombra suave y sutil */
+    overflow: hidden; /* Para redondear las esquinas */
+    border: 1px solid #e0e0e0; /* Borde gris claro y suave */
+}
+
+th {
+    background-color: #3f51b5; /* Azul principal para el encabezado */
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase; /* Encabezados en mayúsculas */
+    border-bottom: 2px solid #d1d8e2; /* Línea inferior gris claro */
+}
+
+td {
+    border-bottom: 1px solid #e9ecef; /* Línea divisoria muy suave */
+    padding: 0.75rem;
+}
+
+tr:last-child td {
+    border-bottom: none; /* Sin borde en la última fila */
+}
+
+.actions,
+.search {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ffffff; /* Fondo blanco para las acciones/búsqueda */
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.05); /* Sombra suave y sutil */
+    display: flex;
+    align-items: center; /* Alinear verticalmente los elementos */
+    border: 1px solid #e0e0e0; /* Borde gris claro y suave */
+}
+
+.search input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ced4da; /* Borde gris estándar para el input */
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+    flex-grow: 1; /* El input ocupa el espacio restante */
+}
+
+button {
+    padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
+    border: none;
+    background-color: #1976d2; /* Azul similar al botón "Editar" */
+    color: #ffffff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out; /* Transición suave */
+}
+
+button:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el ratón */
+}

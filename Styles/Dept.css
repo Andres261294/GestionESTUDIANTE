@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background-color: #f8f9fa; /* Gris muy claro para el fondo */
+    padding: 30px; /* Un poco más de espacio alrededor del contenido */
+}
+
+h1,
+h2 {
+    color: #3f51b5; /* Azul principal para los títulos */
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3f51b5; /* Línea inferior azul más destacada */
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    border-radius: 8px; /* Bordes redondeados para la tabla */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    border: 1px solid #e0e0e0; /* Borde gris claro y sutil */
+}
+
+th,
+td {
+    border: 1px solid #e9ecef; /* Líneas divisorias más claras */
+    padding: 12px 15px; /* Más espacio dentro de las celdas */
+    text-align: left; /* Alineación del texto a la izquierda para mejor lectura */
+}
+
+th {
+    background-color: #3f51b5; /* Azul principal para el encabezado */
+    color: #ffffff; /* Texto blanco para contraste */
+    font-weight: bold;
+    border-bottom: 2px solid #d1d8e2; /* Línea inferior gris claro para el encabezado */
+}
+
+.actions,
+.search {
+    margin-bottom: 20px; /* Más espacio debajo de estas secciones */
+    padding: 15px;
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 6px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Sombra muy sutil */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+    display: flex; /* Para alinear elementos dentro */
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Borde gris estándar para el input */
+    border-radius: 4px;
+    margin-right: 10px; /* Espacio a la derecha del input */
+    flex-grow: 1; /* Permite que el input crezca para ocupar espacio */
+}
+
+.edit-button,
+.save-button {
+    padding: 8px 15px; /* Más espacio dentro de los botones */
+    margin-left: 10px;
+    border: none; /* Eliminar bordes predeterminados */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    font-size: 0.9em; /* Tamaño de fuente ligeramente menor */
+}
+
+.edit-button {
+    background-color: #1976d2; /* Azul similar al botón de la imagen */
+    color: #ffffff; /* Texto blanco */
+}
+
+.save-button {
+    background-color: #2e7d32; /* Tono de verde para "Guardar" */
+    color: #ffffff;
+}
+
+.edit-button:hover {
+    background-color: #1565c0; /* Tono más oscuro al pasar el ratón */
+}
+
+.save-button:hover {
+    background-color: #1b5e20; /* Tono más oscuro al pasar el ratón */
+}

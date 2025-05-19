@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Gris muy claro, similar al fondo */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    color: #495057; /* Gris para el texto, buena legibilidad */
+}
+
+h1,
+h2 {
+    color: #3f51b5; /* Azul principal para los títulos, como el encabezado de la tabla */
+    margin-bottom: 15px;
+    border-bottom: 3px solid #3f51b5; /* Línea inferior azul más prominente */
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    border: 1px solid #e0e0e0; /* Borde gris claro y sutil */
+}
+
+th {
+    background-color: #3f51b5; /* Azul principal para el encabezado de la tabla */
+    color: #ffffff; /* Texto blanco para contraste */
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #d1d8e2; /* Línea inferior gris claro */
+}
+
+td {
+    border-bottom: 1px solid #e9ecef; /* Separador de filas gris muy claro */
+    padding: 12px 15px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background-color: #e8eaf6; /* Azul muy claro al pasar el ratón, sutil */
+}
+
+.actions,
+.search {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff; /* Fondo blanco para las secciones */
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Sombra muy sutil */
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0; /* Borde gris claro y sutil */
+}
+
+.search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ced4da; /* Borde gris estándar para el input */
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-grow: 1;
+}
+
+.edit-button {
+    background-color: #1976d2; /* Un tono de azul similar al botón "Editar" */
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.save-button {
+    background-color: #2e7d32; /* Un tono de verde si fuera relevante un "Guardar" */
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 5px; /* Espacio si hay varios botones */
+}
+
+.edit-button:hover {
+    background-color: #1565c0; /* Tono más oscuro al pasar el ratón */
+}
+
+.save-button:hover {
+    background-color: #1b5e20; /* Tono más oscuro al pasar el ratón */
+}
+
+/* Opcional: Espacio entre elementos */
+> * {
+    margin-bottom: 15px;
+}
+
+/* Estilo opcional para el footer */
+/* footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+} */

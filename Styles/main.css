@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: stable;
+}
+
+html,
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y legible */
+    background-color: #f8f9fa; /* Gris muy claro para el fondo */
+    color: #495057; /* Gris para el texto general */
+}
+
+h1 {
+    height: auto; /* Ajustar altura automáticamente al contenido */
+    width: 95%;
+    margin: 20px auto; /* Más espacio superior e inferior */
+    padding: 20px; /* Reducir un poco el padding vertical */
+    background: #e9ecef; /* Gris muy claro para el fondo del encabezado */
+    color: #3f51b5; /* Azul principal para el texto del encabezado */
+    border-radius: 8px;
+    text-align: center;
+    border-bottom: 3px solid #3f51b5; /* Línea inferior azul */
+}
+
+nav {
+    height: auto; /* Ajustar altura automáticamente */
+    width: 80%; /* Ancho más amplio para el menú */
+    margin: 20px auto; /* Más espacio alrededor del menú */
+    background-color: #ffffff; /* Fondo blanco para la navegación */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03); /* Sombra sutil */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Estirar los elementos para que tengan la misma altura */
+}
+
+nav ul {
+    width: 100%;
+    height: 120px; /* Establecer una altura fija para el contenedor ul */
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    align-items: stretch; /* Estirar los elementos para que tengan la misma altura */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    flex-grow: 1; /* Hacer que los elementos crezcan para ocupar el espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 15px 10px; /* Ajustar el padding */
+    background: #3f51b5; /* Azul principal para los elementos del menú */
+    border-radius: 6px;
+    height: 100%; /* Hacer que los li ocupen toda la altura del ul */
+}
+
+nav ul li p {
+    font-size: 0.9em; /* Tamaño de fuente ligeramente menor */
+    color: #ffffff; /* Texto blanco para contraste */
+    margin-top: 10px;
+    text-align: center; /* Centrar el texto del párrafo */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Texto blanco para los enlaces */
+    padding: 15px 10px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #303f9f; /* Tono más oscuro al pasar el ratón */
+}
+
+/* Tablas y formularios */
+table {
+    width: 95%; /* Ancho un poco menor para dejar margen */
+    border-collapse: collapse;
+    margin: 20px auto; /* Centrar la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Sombra sutil */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff; /* Fondo blanco para la tabla */
+    border: 1px solid #e0e0e0; /* Borde gris claro */
+}
+
+th,
+td {
+    border: 1px solid #e9ecef; /* Líneas divisorias más claras */
+    padding: 15px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3f51b5; /* Azul principal para el encabezado */
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: 2px solid #d1d8e2; /* Línea inferior gris claro */
+}
+
+form {
+    width: 95%; /* Ancho para el formulario */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e0e0e0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #495057;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select {
+    width: calc(100% - 16px); /* Ajustar ancho con el padding */
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegurar que el padding no aumente el ancho */
+}
+
+form button {
+    padding: 15px 10px;
+    background-color: #2e7d32; /* Tono de verde para los botones */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+form button:hover {
+    background-color: #1b5e20; /* Tono más oscuro al pasar el ratón */
+}

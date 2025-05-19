@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión por Departamento</title>
+  <link rel="stylesheet" href="../Styles/Dept.css">
+</head>
+
+<body>
+  <a href="../index.html">← Volver</a>
+  <h1>Gestión por Departamento</h1>
+
+  <div class="search">
+    <input type="text" id="busqueda" placeholder="Buscar por departamento" oninput="filtrarTabla()">
+  </div>
+
+  <h2>Listado de Estudiantes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Documento</th>
+        <th>Departamento</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-estudiantes"></tbody>
+  </table>
+
+  <script src="../Scripts/dept.js"></script>
+</body>
+
+</html>
